@@ -4,23 +4,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
     //movement on screen and limit to the viewable screen
+    [Header("General")]
     [Tooltip("In ms^-1")][SerializeField] float xSpeed = 4f;
     [Tooltip("In m")] [SerializeField] float xRange = 5f;
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 4f;
     [Tooltip("In m")] [SerializeField] float yRange = 5f;
 
     //rotation
+    [Header("Screen-Position Based")]
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float controlPitchFactor = -30f;
-
+    [Header("Control-Throw Based")]
     [SerializeField] float positionYawFactor = 5f;
-
     [SerializeField] float controlRollFactor = -20f;
 
 
     float xThrow, yThrow;
+    bool isControlEnabled = true;
 
 
     // Use this for initialization
@@ -28,15 +30,17 @@ public class Player : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider other){
-        print("Player triggered something");
+    // Update is called once per frame
+    void Update (){
+        if (isControlEnabled){
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
 
-    // Update is called once per frame
-    void Update ()
-    {
-        ProcessTranslation();
-        ProcessRotation();
+    void OnPlayerDeath() {// called by string reference
+        //freeze the controls
+        isControlEnabled = false;
     }
 
     private void ProcessRotation(){

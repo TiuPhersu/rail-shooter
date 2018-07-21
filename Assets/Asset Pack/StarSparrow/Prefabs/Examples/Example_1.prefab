@@ -23,10 +23,12 @@ GameObject:
   - component: {fileID: 23000014158224576}
   - component: {fileID: 65382489341429572}
   - component: {fileID: 54263844698988178}
+  - component: {fileID: 114654891164013974}
   - component: {fileID: 114787827015494908}
+  - component: {fileID: 114462238691061680}
   m_Layer: 0
   m_Name: Example_1
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,8 +192,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -202,7 +204,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013772491214}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.0626006, y: 0.96831894, z: 3.306026}
@@ -302,6 +304,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114462238691061680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013772491214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f742cb69a6eec143838f9c1d4edcd6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114654891164013974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013772491214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5bb7f17e8642d4891ad6efe1db3df8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xSpeed: 4
+  xRange: 5
+  ySpeed: 4
+  yRange: 5
+  positionPitchFactor: -5
+  controlPitchFactor: -30
+  positionYawFactor: 5
+  controlRollFactor: -20
 --- !u!114 &114787827015494908
 MonoBehaviour:
   m_ObjectHideFlags: 1

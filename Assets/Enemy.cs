@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
+    [SerializeField] GameObject deathFX;
+    [SerializeField] Transform parent;
 
 	// Use this for initialization
 	void Start () {
@@ -20,7 +22,10 @@ public class Enemy : MonoBehaviour {
     }
 
     void OnParticleCollision(GameObject other) {
-        //print("hit from particle" + gameObject.name);
+        print("hit from particle" + gameObject.name);
+        //use explostion fx, set position, don't rotate);
+        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);//have explosion affect to enemy
+        fx.transform.parent = parent;
         Destroy(gameObject);
     }
 }

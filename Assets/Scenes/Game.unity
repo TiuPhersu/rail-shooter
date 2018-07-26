@@ -190,7 +190,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
 --- !u!65 &16534548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -280,7 +281,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
 --- !u!65 &28372877
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -478,15 +480,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
@@ -514,7 +520,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!65 &104216572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -583,7 +590,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!65 &277842233
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -673,7 +681,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
 --- !u!65 &294459295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -740,6 +749,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &404881245 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1955191209945836, guid: 5a3022bf589cad84f8e05999a470781f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1839145032}
 --- !u!1 &438477307 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1074994750746910, guid: 6d7afa73fcb1fce4cb4b65361a29bcbd,
@@ -763,7 +777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
 --- !u!65 &438477310
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -909,7 +924,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
 --- !u!65 &637408840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -999,7 +1015,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!65 &710694799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1053,15 +1070,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
@@ -1089,7 +1110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!65 &712423077
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1283,7 +1305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
 --- !u!65 &802126109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1337,15 +1360,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
@@ -1385,7 +1412,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!1001 &1021371408
 Prefab:
   m_ObjectHideFlags: 0
@@ -1463,7 +1491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
 --- !u!65 &1021371412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1571,19 +1600,28 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1184120773 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1961725787214950, guid: 5a3022bf589cad84f8e05999a470781f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1839145032}
 --- !u!1 &1191607683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,15 +1691,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
@@ -1791,15 +1833,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
@@ -1827,7 +1873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!65 &1288500286
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2152,15 +2199,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
@@ -2206,15 +2257,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.y
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_LocalScale.z
-      value: 10.000002
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1238095480485456, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
       propertyPath: m_Name
       value: Ship 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354848751893472, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf374732b0ea2c34daa340dc2de7f746, type: 2}
@@ -2242,7 +2297,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!65 &1616834144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2278,7 +2334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 100
+  scorePerHit: 20
+  hits: 10
 --- !u!65 &1618783573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2298,6 +2355,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 49978993}
     m_Modifications:
+    - target: {fileID: 114706580478336464, guid: 5a3022bf589cad84f8e05999a470781f,
+        type: 2}
+      propertyPath: guns.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4991143310408932, guid: 5a3022bf589cad84f8e05999a470781f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2330,7 +2392,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1930918915626730, guid: 5a3022bf589cad84f8e05999a470781f, type: 2}
+    - target: {fileID: 1961725787214950, guid: 5a3022bf589cad84f8e05999a470781f, type: 2}
+      propertyPath: m_Name
+      value: Gun Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 114706580478336464, guid: 5a3022bf589cad84f8e05999a470781f,
+        type: 2}
+      propertyPath: guns
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114706580478336464, guid: 5a3022bf589cad84f8e05999a470781f,
+        type: 2}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 404881245}
+    - target: {fileID: 114706580478336464, guid: 5a3022bf589cad84f8e05999a470781f,
+        type: 2}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1184120773}
+    - target: {fileID: 1955191209945836, guid: 5a3022bf589cad84f8e05999a470781f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961725787214950, guid: 5a3022bf589cad84f8e05999a470781f, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2400,4 +2485,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathFX: {fileID: 1410921189703684, guid: 816b47aae1c3f7f47b4040f8670479e2, type: 2}
   parent: {fileID: 1350020102}
-  scorePerHit: 12
+  scorePerHit: 30
+  hits: 3
